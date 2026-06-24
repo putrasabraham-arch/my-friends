@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Friends at SMKN 7 BATAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ambient">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+</div>
+
+<main>
+  <section class="hero">
+    <a href="https://smkn7batam.sch.id/public/" target="_blank" rel="noopener noreferrer" class="hero-badge">SMKN 7 BATAM</a>
+    <h1 class="hero-title">My Friends</h1>
+    <p class="hero-subtitle">Meet my friends from SMKN 7 Batam.</p>
+    <p class="hero-credit">Created by Bram</p>
+  </section>
+
+  <div class="counter-text">4 Friends from SMKN 7 Batam</div>
+
+  <div class="search-wrapper">
+    <input type="text" id="search-input" placeholder="Search for a friend..." autocomplete="off">
+  </div>
+
+  <section class="cards" id="cards-container">
+    <!-- Cards rendered by JavaScript -->
+  </section>
+
+  <div id="empty-state" class="empty-state">
+    <p>Friend not found.</p>
+  </div>
+
+  <footer class="site-footer">
+    <p class="footer-credit">Created by Bram</p>
+    <p class="footer-desc">A simple website to introduce my friends from SMKN 7 Batam.</p>
+  </footer>
+</main>
+
+<div id="modal-overlay">
+  <div id="modal">
+    <button id="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-avatar">
+      <img src="" alt="" id="modal-img">
+    </div>
+    <h2 id="modal-name"></h2>
+    <span class="modal-badge">FRIEND FROM SMKN 7 BATAM</span>
+    <p id="modal-desc"></p>
+    <div class="modal-memory">
+      <h4 class="memory-title">Favorite Memory</h4>
+      <p id="modal-memory"></p>
+    </div>
+    <div class="modal-tags" id="modal-tags"></div>
+    <div class="modal-nav">
+      <button id="modal-prev" aria-label="Previous friend">Previous</button>
+      <button id="modal-next" aria-label="Next friend">Next Friend</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
